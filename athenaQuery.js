@@ -12,7 +12,7 @@ const athena = new AWS.Athena({
 function createQueryExecutionId(callback){
     /**doing resultConfiguration, but we will not save query result there. */
     const params = {
-        QueryString: 'SELECT * FROM "AwsDataCatalog"."calculadoracrawler"."calculoscsv" limit 10;', /* required */
+        QueryString: 'SELECT * FROM "calculadoracrawler"."calculoscsv";', /* required */
         ResultConfiguration: { /* required */
             OutputLocation: `s3://calculadora.dev.athena.results/`, /* required */
             EncryptionConfiguration: {

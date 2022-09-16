@@ -6,4 +6,4 @@ npm install
 
 Run the following command in root directory of an app in command prompt.
 
-node index.js# DashCalculadoradeBeneficios
+node index.js
